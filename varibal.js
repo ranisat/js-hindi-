@@ -6,4 +6,13 @@ accountCity = "Pune"
 
 // accountId = 2
 
-console.log(accountId);
+// Prefer not use var 
+// bacause of issue in block scope and functional scope
+
+console.log(accountEmail);
+
+accountEmail = "abc@gmail.com"
+accountPassword = "313131"
+accountCity = "india"
+
+console.table([accountId, accountEmail, accountPassword, accountCity])
