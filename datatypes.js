@@ -19,4 +19,7 @@ let state;
 // undefined =>
 // symbol => unique
 
+console.log(typeof age);
+console.log(typeof issueloggedIn);
+console.log(typeof state);
 
