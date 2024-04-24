@@ -1,0 +1,18 @@
+// () - called paranthises
+// {} - called curly braces
+// [] - called brackets
+
+// console.log(name + repoCount + " value");/
+
+//js string outdated formula
+
+// latest formula
+// `` backticks
+
+// Varible ++++++++++++++*************
+
+// accountId = 2
+
+// Prefer not use var 
+// bacause of issue in block scope and functional scope
+
