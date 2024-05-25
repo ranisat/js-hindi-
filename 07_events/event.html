@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+    <style>
+        body{
+            background:#f1f1f1;
+        }
+        .center{
+            width:90%;
+            margin:auto;
+        }
+        .center ul{
+            list-style: none;
+        }
+        .center ul li{
+         float:left;
+        }
+        .center ul li img{
+            width:250px;
+            height:250px;
+            margin:10px;
+            border:2px solid black
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div class="center">
+        <ul id="images">
+            <li>
+                <a href="https://www.google.com/" id="google">google</a>
+            </li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1VuKA1bfF-J9EICmf9n4YvfTkXkhQb4Zln2kVXHZnw&s" alt="" id="nature1"></li>
+            <li><img src="https://i.pinimg.com/736x/f8/2b/e0/f82be07e644ea0437eb397549e93bc13.jpg" alt="" id="nature2"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlaS2Pt33ODe7nNiqfr6s_G17vt1BDq98xbUQ2n4Wb6opKBpNaxXqpYGwhVau9WA0i6E&usqp=CAU" alt="" id="nature3"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2g3472qE6hulLY2KRK7lfBs3GwmHhzjJa9vfKvwBwg&s" alt="" id="nature3"></li>
+
+        </ul>
+    </div>
+
+  
+
+    <script>
+        // js notes
+  // attachEvents
+  // jquey - on
+
+  // type, timestamp, defaultPrevenred
+  // target, toElement, srcElement, currentTarget
+  // clientX, clientY, screenY, screenX
+  // altkey, ctrlkey, shiftkey, keycode
+
+        // document.getElementById('images').addEventListener('click', function(e){
+        //     console.log('clicked inside the ul')
+        // }, false)
+
+
+        // document.getElementById('nature1').addEventListener('click', function(e){
+        //     console.log('alert here...')
+        //     e.stopPropagation()
+        // }, false)
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     console.log('click google');
+        //     e.preventDefault();
+        // })
+
+        // remove images onclick event
+
+        document.querySelector('#images').addEventListener
+        ('click', function(e){
+            // console.log(e.target.parentNode);
+            // let removeIt = e.target.parentNode
+            // removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt); // use also
+
+            // this also
+
+            console.log(e.target.tagName)
+            if(e.target.tagName === "IMG"){
+                let removeIt = e.target.parentNode
+            removeIt.remove()
+            }
+        })
+    </script>
+</body>
+</html>
